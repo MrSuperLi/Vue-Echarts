@@ -82,7 +82,7 @@
             getTitle: function(title) {
                 let option = title;
                 if(typeof option === 'string'){
-                    return this.title({text:option});
+                    return this.title({text: option});
                 }
                 return this.title(option);
             },
@@ -97,8 +97,8 @@
                 };
             },
             getPercent: function(n,sum,num, gap=5) {
-                let width = (num - gap*(sum-1))/sum;
-                let start = n*(width + gap);
+                let width = (num - gap * (sum - 1)) / sum;
+                let start = n * (width + gap);
                 let end = start + width;
                 return [start, end];
             },
