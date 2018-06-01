@@ -1,6 +1,11 @@
 # Echart组件
 > 主要是对其配置进行封装，因此只需要传入数据即可
 
+## 安装
+```
+npm install git+https://github.com/MrSuperLi/Vue-Echarts.git --save
+```
+
 ## LineBarChart
 > 条形和折线图
 

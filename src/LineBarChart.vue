@@ -97,7 +97,7 @@
           let type = item.type && item.type === 'bar' ? 'bar' : 'line';
           let name = item.name ? item.name : '';
           let barWidth = item.barWidth ? item.barWidth : '50%';
-          let label = item.label === 'show'? {
+          let label = item.label === 'show' ? {
             normal: {
               show: true,
               position: 'inside'

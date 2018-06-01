@@ -1,6 +1,11 @@
 # Echart components
 > The main thing is to encapsulate its configuration so only incoming data is needed
 
+## Installation
+```
+Npm install git+https://github.com/MrSuperLi/Vue-Echarts.git --save
+```
+
 ## LineBarChart
 > Bar and Line Charts
 
