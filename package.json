@@ -1,5 +1,5 @@
 {
-  "name": "@vue-component/McECharts",
+  "name": "@vue-component/Vue-ECharts",
   "version": "1.0.0",
   "description": "vue echarts",
   "main": "src/index.js",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.mingchao.com/git/vue-component/McECharts.git"
+    "url": "https://github.com/MrSuperLi/Vue-Echarts.git"
   },
   "keywords": [
     "vue",
-    "McEcharts"
+    "vue-Echarts"
   ],
-  "author": "lizhicheng",
+  "author": "MrSuperLi",
   "license": "ISC"
 }
