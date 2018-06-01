@@ -106,13 +106,13 @@
           let index = item.index === false ? {} : {
             markPoint: {
               data: [
-                {type: 'max', name: '最大值'},
-                {type: 'min', name: '最小值'}
+                {type: 'max', name: 'max value'},
+                {type: 'min', name: 'min value'}
               ]
             },
             markLine: {
               data: [
-                {type: 'average', name: '平均值'}
+                {type: 'average', name: 'avg value'}
               ]
             }
           };
@@ -164,11 +164,10 @@
         };
       },
       getY: function(options = []) {
-        // 空数组或空
-        if (options === false || !options) {
+        if (options === false || !options.length) {
           return {name: '', type: 'value'};
         }
-        // 判断对象
+
         if (Object.prototype.toString.call(options) === '[object Object]') {
           let suffix = options.suffix ? options.suffix : '';
           return {
