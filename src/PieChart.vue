@@ -147,7 +147,7 @@
                 const level = option.level ? option.level : option.series.length;
                 const gap = option.gap ? option.gap : 5;
                 const series = this.getSeries(option.series, level, gap);
-                const title = this.getTitle(option.title?option.title:{});
+                const title = this.getTitle(option.title ? option.title: {});
                 return {
                     ...tmp,
                     ...series,
