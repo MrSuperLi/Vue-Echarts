@@ -1,7 +1,7 @@
 /**
  * Descipt:
- * author:lizhicheng <lizc442@mingchao.com>
- * Date:2017/5/4
+ * author:MrSuperLi 382253558@qq.com
+ * Date:2018/5/4
  */
 
 import LineBarChart from './LineBarChart.vue';
