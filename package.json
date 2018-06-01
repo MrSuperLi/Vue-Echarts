@@ -1,0 +1,22 @@
+{
+  "name": "@vue-component/McECharts",
+  "version": "1.0.0",
+  "description": "vue echarts",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "echarts": "^3.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.mingchao.com/git/vue-component/McECharts.git"
+  },
+  "keywords": [
+    "vue",
+    "McEcharts"
+  ],
+  "author": "lizhicheng",
+  "license": "ISC"
+}
