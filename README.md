@@ -3,7 +3,7 @@
 
 ## Installation
 ```
-Npm install git+https://github.com/MrSuperLi/Vue-Echarts.git --save
+npm install git+https://github.com/MrSuperLi/Vue-Echarts.git --save
 ```
 
 ## LineBarChart
