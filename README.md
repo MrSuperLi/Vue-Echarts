@@ -12,38 +12,38 @@ npm install git+https://github.com/MrSuperLi/Vue-Echarts.git --save
 ### Configuration
 ```
 // default line chart
-Let data = {
-   Title:{ // The title and the properties inside are optional
-    Text:"Headline" //Default is null
-    Subtext: 'subheader', // defaults to null
-    Position: 'center', // default center
+let data = {
+   title:{ // The title and the properties inside are optional
+    text:"Headline" //Default is null
+    subtext: 'subheader', // defaults to null
+    position: 'center', // default center
     },
    x: {data: ['first day','..','..','..']}, // x axis
    y: {name: "RMB(yuan)", suffix: 'meta'}, // y axis
-   Series: [ // specific data default line chart
+   series: [ // specific data default line chart
        {
-           Name:"Monthly recharge amount",
-           Data:[1,2,3,4],
-           Color:"#3398DB" // Specify color, optional
+           name:"Monthly recharge amount",
+           data:[1,2,3,4],
+           color:"#3398DB" // Specify color, optional
        }
    ]
 };
 
-Let data = {
+let data = {
  y: [ // Set the left and right y-axis
    {name: 'recharge number', suffix: "person"}, // left
    {name: 'recharge amount', suffix: "meta"} // right
  ],
  x: {data:[...]},
- Series:[{ // Discounted Chart
-   Name: 'Daily recharge amount',
-   Data: [...],
+ series:[{ // Discounted Chart
+   name: 'Daily recharge amount',
+   sata: [...],
    yIndex: 1
  },{
-   Name: 'recharge number'
-   Type: 'bar', // Specified as a bar chart
-   Data: [...],
-   Color:"#3398DB"
+   name: 'recharge number'
+   type: 'bar', // Specified as a bar chart
+   data: [...],
+   color:"#3398DB"
  }]
 };
 
@@ -54,35 +54,35 @@ Let data = {
 
 ```
 The default is a circular map
-Let data = {
-    Title:{}, // Optional, same as LineBarChart
-    Series:[{
-      Type:'ring', // Specified as a circle
-      Data:[
+let data = {
+    title:{}, // Optional, same as LineBarChart
+    series:[{
+      type:'ring', // Specified as a circle
+      sata:[
           {value:335, name:'Direct access'},
           {value:310, name:'Mail Marketing'}
       ],
-      Name:'',
+      name:'',
     }]
 }
 
-Let data = {
-    Gap:5, // Set the gap between the rings, default 5
-    Level:4, // Set the number of points to divide. The default is series.length
-    Series:[{ // for many data will automatically use the ring diagram representation
-      Data:[
+let data = {
+    gap:5, // Set the gap between the rings, default 5
+    level:4, // Set the number of points to divide. The default is series.length
+    series:[{ // for many data will automatically use the ring diagram representation
+      data:[
           {value:335, name:'Direct access'},
           {value:310, name:'Mail Marketing'}
       ],
-      Name:'',
+      name:'',
     },{
         // Set the number of rings in the circle graph, starting from 0, the default is the index of the element in the series
-        Level:1,
-        Data:[
+        level:1,
+        data:[
             {value:335, name:'Direct access'},
             {value:310, name:'Mail Marketing'}
         ],
-        Name:'',
+        name:'',
       }]
 }
 ```
@@ -91,16 +91,16 @@ Let data = {
 > If you want to have only one element in the series, and to set the ring in any position and size?
 
 ```
-Let data = {
-    Gap:0, // set the gap
-    Level:4, // Tell it to divide into 4 rings
-    Series:[{
-        Level:2, // and I want to be in the third ring position
-        Data:[
+let data = {
+    gap:0, // set the gap
+    level:4, // Tell it to divide into 4 rings
+    series:[{
+        level:2, // and I want to be in the third ring position
+        data:[
             {value:335, name:'Direct access'},
             {value:310, name:'Mail Marketing'}
         ],
-        Name:'',
+        name:'',
       }]
 }
 // For simplicity, provide a type attribute, set to ring to use the default style ring
